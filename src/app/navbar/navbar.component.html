@@ -1,0 +1,11 @@
+<h1>Olion Ang-kotisivu</h1>
+<nav>
+  <!--käydään läpi jokainen sivu-->
+  <span *ngFor="let page of content">
+    <ul>
+      <li>
+        <a [routerLink]="['/page', page.id]">{{page.name}}</a>
+      </li>
+    </ul>
+  </span>
+</nav>
